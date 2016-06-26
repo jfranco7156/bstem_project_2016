@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Vicinia Register</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Pacifico);
+            body
+            {
+                background-image:url(img/whitediamond.png);
+            }
+            input, textarea 
+            { 
+                padding: 9px; 
+                border: solid 1px #E5E5E5; 
+                outline: 0; 
+                font-size:18px;
+                font-family:'Calibri';
+                width: 200px; 
+                background: #FFFFFF url('bg_form.png') left top repeat-x; 
+                background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); 
+                background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); 
+                box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+                -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+                -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+            } 
+   
+            textarea 
+            { 
+                width: 400px; 
+                max-width: 400px; 
+                height: 150px; 
+                line-height: 150%; 
+            } 
+   
+            input:hover, textarea:hover, 
+            input:focus, textarea:focus 
+            { 
+                border-color: #C9C9C9; 
+                -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; 
+            } 
+            
+            input
+            {
+                color:#666666;
+            }
+   
+            label
+            {
+                font-family:'Calibri';
+                font-size:20px;
+                color:#6edaf2;
+            }
+            
+            #form
+            {
+                text-align:center;
+            }
+            
+            td
+            {
+                text-align:right;
+                font-family:'Pacifico';
+                color:#6edaf2;
+                font-size:26px;
+                padding:1%;
+            }
+            
+            table
+            {
+                
+                margin-left:auto; 
+                margin-right:auto;
+                margin-top: 10px;
+            }
+               
+            #schedule
+            {
+                margin:0 auto;
+                margin-left:40%;
+                font-family:'Calibri';
+                font-size:20px;
+                color:#666666;
+            }
+            
+            #center
+            {
+                font-family:'Calibri';
+                font-size:26px;
+                color:#6edaf2;
+            }
+            
+            #thanks
+            {
+                text-align: center;
+                font-family:'Pacifico';
+                font-size:26px;
+                color:#6edaf2;
+                margin: 8px auto 8px auto;
+            }
+            
+            #submit
+            {
+                font-family:'Pacifico';
+                color:#6edaf2;
+                font-size: 26px;
+                margin-top: 20px;
+                border-radius: 2px;
+            }
+        </style>
+    </head>
+    <script>
+
+        
+        
+    </script>
+    <body onload="initialize();">
+        <header>
+                <a href="index.html"><img src="img/logo2.png" /></a>
+                <span>Bringing Communities Closer Together, One Delivery at a Time</span>
+        </header>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li class="dropdown">
+                      <a href="notlog.html" class="active" class="dropbtn">Buy</a> 
+                      <div class="dropdown-content">
+                          <a href="profiles.html">See Profiles</a>
+                          <a href="#" class="active">Place An Order</a>
+                      </div>
+                  </li>
+                  <li><a href="notlog.html">Deliver</a></li>
+                  <li style="float:right;"><a href="signin.html">Sign In</a></li>
+                  <li style="float:right;"><a href="register.html">Register</a></li>
+                   <li style="float:right;"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        
+        <table>
+        <form method = "post" action = "redirect.php">
+            <input type="hidden" name="formType" value="order">
+            <label>
+    			<tr><td>First Name:</td><td><input type = "text" name = "firstName" /></td></tr>
+    		</label>
+    		<label>
+    		    <tr><td>Last Name:</td><td><input type = "text" name = "lastName" /></td></tr>
+    		</label>
+            <label>
+                <tr><td>Deliverer's Username:</td><td><input type = "text" name = "username" /></td></tr>
+    		</label>
+    		<label>
+    		    <tr><td># of Items:</td><td><input type = "text" name = "itmsNum" /></td></tr>
+    		</label>
+    		<label>
+    		    <tr>
+    		    <td colspan="2" style="text-align: center;">
+    		        <textarea rows="5" cols="2" name="messageContact" style="color:#666666;">Enter Additional Comments Here...</textarea>
+                 </td>
+                 </tr>
+    		</label>
+    		</table>
+    		<br/>
+            <div style="text-align:center;">
+    		    <a href="notlog.html"><input id="submit" type="submit" value="Submit"></a>
+    	    </div>
+		</form>
+		<div id="thanks">
+            Thanks for Ordering!
+        </div>
+        <footer>
+            &copy; Vicinia Co.
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Vicinia Profiles</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style type="text/css">
+           
+            body
+            {
+                background-image:url(img/whitediamond.png);
+            }
+            input, textarea 
+            { 
+                padding: 9px; 
+                border: solid 1px #E5E5E5; 
+                outline: 0; 
+                font-size:18px;
+                font-family:'Calibri';
+                width: 200px; 
+                background: #FFFFFF url('bg_form.png') left top repeat-x; 
+                background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); 
+                background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); 
+                box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+                -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+                -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+            } 
+            textarea 
+            { 
+                width: 400px; 
+                max-width: 400px; 
+                height: 150px; 
+                line-height: 150%; 
+            } 
+   
+            input:hover, textarea:hover, 
+            input:focus, textarea:focus 
+            { 
+                border-color: #C9C9C9; 
+                -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+            } 
+            
+            input
+            {
+                color:#666666;
+            }
+            
+            .profPic
+            {
+                clear:left;
+                width:40%;
+                display:inline-block;
+            }
+            
+            .profInfo
+            {
+                clear:right;
+                width:55%;
+                display:inline-block;
+                height: 236px;
+                overflow: scroll;
+            }
+            
+            div img 
+            {
+                width:70%;
+                padding:5%;
+            }
+            
+            .profile
+            {
+                background-image:url(img/back.png);
+            }
+            
+            .quote
+            {
+                color:#8f8f8f;
+                font-size:18px;
+                font-style: italic;
+            }
+            
+            .blue
+            {
+                color:#6edaf2;
+            }
+            
+            a
+            {
+                color:#8f8f8f;
+                text-decoration:none;
+            }
+            
+            input[type="submit"]
+            {
+                width: auto;
+            }
+        </style>
+        <script type="text/javascript">
+            function initialize()
+            {
+                jarea = document.getElementById("area");
+                jarea.innerHTML = "10013";
+            }
+        </script>
+    </head>
+    <body onload="initialize();">
+        <header>
+            <a href="index.html"><img src="img/logo2.png" /></a>
+            <span>Bringing Communities Closer Together, One Delivery at a Time</span>
+        </header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="dropdown">
+                  <a href="notlog.html" class="active"class="dropbtn" >Buy</a> 
+                  <div class="dropdown-content">
+                      <a href="profiles.html" class="active">See Profiles</a>
+                      <a href="order.html">Place An Order</a>
+                  </div>
+              </li>
+              <li><a href="notlog.html">Deliver</a></li>
+              <li style="float:right;"><a href="signin.html">Sign In</a></li>
+              <li style="float:right;"><a href="register.html">Register</a></li>
+              <li style="float:right;"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </br>
+        <div class="info">
+            <p class="subtitle">Choose Your Deliverer</p><br/>
+            With <p class="vic">Vicinia</p> you can choose who comes to your doorstep.
+            </br>
+            This is a preview to the top deliverers in 
+            <p class="vic" style="color:#6edaf2;font-size:28px;"><span id="area"></span></p>.
+            <br/>
+            <form method = "post" action = "redirect.php">
+                <input type="hidden" name="formType" value="signIn">
+                <label>
+                    Would you like to search another area?
+                    <input type="text" name="areaSearch"/>
+                </label>
+                <input type="submit" value="Search"/>
+            </form>    
+            <br/></br>
+            <div class="profile">
+                <div class="profPic"><img src="img/Meyer.jpg"></div>
+                <div class="profInfo">
+                    <p class="subtitle">Marissa Mayer</p></br>
+                    Marissa is 41 years old and has made the most successful deliveries in Tribeca, New York. </br></br>
+                    <span class="quote">"I enjoy meeting my neighbors, I didn't know that there were so many people who couldn't
+                    leave their homes! I feel like a hero when I deliver them the basic needs in life,"</span> -Marissa</br></br>
+                        Sally Zhou says: <span class="quote">"Marissa is the friendliest deliverer ever! Whenever I see her available I 
+                        request for her to deliver for me and she always does! We talk about cats sometimes and I feel 
+                        like I've made a new friend."</span></br></br>
+                     Friendliness: <span class="blue">9.8/10 </span></br>
+                     Promptness: <span class="blue">9.1/10 </span></br>
+                     Overall Satisfaction: <span class="blue">9.4/10 </span></br>
+                     
+                     <a href="notlog.html">Click to see more reviews</a>
+                </div>
+            </div>
+            </br>
+            <div class="profile">
+                <div class="profPic"><img src="img/Freeman.jpg"></div>
+                <div class="profInfo">
+                    <p class="subtitle">Morgan Freeman</p><br/>
+                    Morgan is loved in his neighborhood for being the most considerate with handling deliveries.</br></br>
+                    <span class="quote">"There's no use in doing it if you're not going to do it right,"</span> -Morgan</br></br>
+                        Violetta Jusiega says, <span class="quote">"Mr. Freeman has never failed to deliver a package. He always carries them with a lot 
+                        of care and when he saw that it was my birthday he wrapped my delivery for me! He's not always on time,
+                        but I know my stuff is in good hands."</span></br></br>
+                     Friendliness: <span class="blue">9.2/10 </span></br>
+                     Promptness: <span class="blue">7.6/10 </span></br>
+                     Overall Satisfaction: <span class="blue">8.9/10 </span></br></br>
+                     
+                     <a href="notlog.html">Click to see more reviews</a>
+                </div>
+            </div>
+            </br>
+            <div class="profile">
+                <div class="profPic"><img src="img/Michelle.jpg"></div>
+                <div class="profInfo">
+                    <p class="subtitle">Michelle Phan</p></br>
+                    Michelle is a young college student who, despite her busy schedule, makes time to pick up some 
+                    extra things throughout her day.</br></br>
+                    <span class="quote">"It's definitely helped me a lot. I'm able to make decent money while working around my exams and internships.
+                    It's so easy to go to the store to pick up a few things for my neighbors, and it's nice to know that while I'm helping 
+                    myself I'm also helping others,"</span> - Michelle</br></br>
+                        Jenniber Franco says,<span class="quote">"Michelle is really sweet and always super quick with her deliveries. Although she often denies
+                        requests for deliveries it's only because she's busy; she's very responsible about replying to say that she can't do the 
+                        delivery but I still request her everytime because she's such a pleasure to see."</span></br></br>
+                    Friendliness: <span class="blue">9.5/10 </span></br>
+                    Promptness: <span class="blue">9.8/10 </span></br>
+                    Overall Satisfaction: <span class="blue">9.7/10 </span></br></br>
+                    <a href="notlog.html">Click to see more reviews</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
